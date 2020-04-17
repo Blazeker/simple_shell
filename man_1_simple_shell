@@ -1,0 +1,60 @@
+.TH HSH 1 "16 Apr 2020" "V 1.0" "hsh user manual"
+
+.SH NAME
+.B hsh
+ - shell command interpreter
+
+
+.SH SYNOPSIS
+.B $
+[ command ]
+[ flags ]
+[ argument 1 ]
+[ argument 2 ]
+[ ... ]
+
+.B $
+[ ls ]
+[ -l -a -v ]
+[ argument 1 ]
+[ argument ]
+[...]
+
+
+.SH DESCRIPTION
+.B hsh
+shell command interpreter is a program that executes commands.
+Run in intercative mode reading line by line from the command prompt (standard input).
+
+
+.SH EXAMPLE
+.B $ 
+ls -t -a -v
+
+
+.B hsh
+run in Non interactive mode reading a command passed through pipe.
+
+.SH EXAMPLE
+.Nm $
+echo "Hello World!" | ./hsh
+
+.SH Formats
+.B hsh
+receives differents commnads, but work in two different modes (Interactive and Non Interactive)
+
+.SH RETURN
+
+Return the value of the most recent command executed if not fails before receive the
+.I EOF
+(end-of-file) condition
+.I Ctrl+D
+or the build-in
+.I exit
+if is invoked.
+
+.SH BUGS
+A Lot
+
+.SH AUTHORS
+Andersen Castañeda and Santiago Arboleda
