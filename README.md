@@ -1,52 +1,82 @@
-Summary of project
+# Shell Replica 
 
-Hello, this is the simple shell project created by Andersen Castañeda and Santiago Arboleda.
-This basic shell allows to execute the main features that any shell have in your unix terminal.
+*Summary of project*
 
-How to run it!
+Hello, this is the simple shell project created by Andersen Castañeda and Santiago Arboleda. This basic shell allows executing the main features that any shell has in your Unix terminal.
 
-To begin, you need to clone this repository on your local machine with one of those two commands.
+## Installation
 
-$ git clone https://github.com/blazeker/simple_shell.git
+1. To begin, you need to clone this repository on your local machine with one of those two commands.
 
-or
+- $ git clone https://github.com/blazeker/simple_shell.git
 
-$ git clone https://github.com/blazeker/simple_shell.git
+- Check if you find all the scripts
 
-Then, compile it.
+```bash
+- _exitcall.c
+- _path.c
+- aux_check.c
+- copy_string.c
+- directory_functions.c
+- malloc_free.c
+- print_errors.c
+- print_prompt.c
+- shell.h
+- shell.c
+- split_aux.c
+- str2_functions.c
+- str_functions.c
+```
 
-$ make all
+2. Compile it with the command:
 
-And execute the shell.
+- $ make all
 
-$ ./hsh
+3. Execute the shell program with the command:
+
+- $ ./hsh
 
 Commands of the shell!
 
 As any shell, this follows the same syntax to execute commands that is:
 
+```bin
 $ <command> <flags> <argument 1> <argument 2> ...
+```
 
 And have a non-interactive mode that is:
 
+```bin
 $ <command> <command> <flags> <argument 1> <argument 2> ... | ./hsh
+```
 
-Examples
+## Usage
 
-Running the shell and prompting command on a interactive way:
+Running the shell and prompting command on an interactive way:
 
-./hsh
+- After compiling, executes the shell programm
+- Run commands like ls, echo, pwd, whoami, ect.
 
+### _Example_
+
+```bin
 $ /bin/ls
-
-or
-
-$ ls -l -a -1
-
-or
-
+```
+```bin
+$ ls -l -a -v
+```
+```bin
 $ echo "message that you want to replicate"
+```
 
-The syntax of non-interactive way is:
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-$ echo "ls -la1" | ./hsh
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Authors
+- Andersen Castañeda [@AndersenCastaneda](https://www.github.com/AndersenCastaneda)
+- Santiago Arboleda  [@Blazeker](https://www.github.com/Blazeker)
